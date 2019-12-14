@@ -70,6 +70,8 @@ vue invoke vue-cli-plugin-cesium
 
 在初始化的过程中会有两个询问
 
+询问一：
+
 ```js
 Whether to import styles globally. This operation will automatically import widgets.css in main.js?
 是否全局引入样式,该操作将自动在main.js引入widgets.css？
@@ -83,7 +85,7 @@ Whether to import styles globally. This operation will automatically import widg
 import 'cesium/Widgets/widgets.css';
 ```
 
-
+询问二：
 
 ```js
 Whether to add sample components to the project components directory?
@@ -94,6 +96,8 @@ Whether to add sample components to the project components directory?
 
 如果此项设置为no，则不生成示例文件
 
+生成的示例中每个文件为一个模块，可直接模块引入至项目中查看
+
 
 
 ### GUI中使用
@@ -103,6 +107,8 @@ Whether to add sample components to the project components directory?
 如下所示：
 
 ![gui001](assets/img/gui001.png)
+
+选中插件点击安装
 
 ![gui002](assets/img/gui002.png)
 
