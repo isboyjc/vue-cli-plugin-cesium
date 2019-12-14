@@ -1,0 +1,24 @@
+{
+  "name": "vue-cli-plugin-cesium",
+  "version": "1.0.0",
+  "description": "Cesium encapsulation based on Vue cli",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isboyjc/vue-cli-plugin-cesium.git"
+  },
+  "keywords": [
+    "cesium",
+    "vue cesium",
+    "vue-cli cesium"
+  ],
+  "author": "isboyjc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isboyjc/vue-cli-plugin-cesium/issues"
+  },
+  "homepage": "https://github.com/isboyjc/vue-cli-plugin-cesium#readme"
+}
