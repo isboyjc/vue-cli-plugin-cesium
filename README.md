@@ -58,8 +58,6 @@ npm install --save-dev vue-cli-plugin-cesium
 yarn add vue-cli-plugin-cesium
 ```
 
-
-
 ##### 调用
 
 安装完成后我们要使用 `vue invoke` 来初始化这个插件
@@ -68,7 +66,21 @@ yarn add vue-cli-plugin-cesium
 vue invoke vue-cli-plugin-cesium
 ```
 
-在初始化的过程中会有两个询问
+
+
+##### 简化
+
+如果您觉得以上两步有些麻烦，您可以使用`vue add`的方式安装使用，即可一步到位
+
+```js
+vue add vue-cli-plugin-cesium
+```
+
+
+
+##### 过程
+
+在`vue invoke`或`vue add`的过程中会有两个询问
 
 询问一：
 
