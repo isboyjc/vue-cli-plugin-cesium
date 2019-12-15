@@ -36,7 +36,7 @@ vue-cli-plugin-cesium是一个针对Cesium的vue-cli扩展插件，使用它将�
 
 
 
-### 使用
+### 安装
 
 vue-cli-plugin-cesium是基于vue-cli的扩展插件，所以在使用前要先安装vue-cli，并使用vue-cli创建一个vue项目
 
@@ -46,7 +46,7 @@ vue-cli-plugin-cesium是基于vue-cli的扩展插件，所以在使用前要先�
 
 创建好一个vue项目后就可以按照以下步骤使用该插件了
 
-##### 安装
+#### 使用方式一
 
 首先是安装vue-cli-plugin-cesium插件，推荐使用yarn安装，因为它更简洁
 
@@ -58,8 +58,6 @@ npm install --save-dev vue-cli-plugin-cesium
 yarn add vue-cli-plugin-cesium
 ```
 
-##### 调用
-
 安装完成后我们要使用 `vue invoke` 来初始化这个插件
 
 ```js
@@ -68,9 +66,9 @@ vue invoke vue-cli-plugin-cesium
 
 
 
-##### 简化
+#### 使用方式二
 
-如果您觉得以上两步有些麻烦，您可以使用`vue add`的方式安装使用，即可一步到位
+如果您觉得使用方式一两步有些麻烦，您可以使用`vue add`的方式安装使用，即可一步到位
 
 ```js
 vue add vue-cli-plugin-cesium
@@ -78,11 +76,11 @@ vue add vue-cli-plugin-cesium
 
 
 
-##### 过程
+#### 安装过程
 
 在`vue invoke`或`vue add`的过程中会有两个询问
 
-询问一：
+##### 询问一
 
 ```js
 Whether to import styles globally. This operation will automatically import widgets.css in main.js?
@@ -97,7 +95,7 @@ Whether to import styles globally. This operation will automatically import widg
 import 'cesium/Widgets/widgets.css';
 ```
 
-询问二：
+##### 询问二
 
 ```js
 Whether to add sample components to the project components directory?
@@ -112,7 +110,9 @@ Whether to add sample components to the project components directory?
 
 
 
-### GUI中使用
+
+
+### GUI中安装
 
 如果我们使用`vue ui`创建项目，也可以直接在项目创建后的插件选项里搜索vue-cli-plugin-cesium并安装
 
@@ -125,6 +125,30 @@ Whether to add sample components to the project components directory?
 ![gui002](assets/img/gui002.png)
 
 
+
+
+
+### 使用
+
+开发时如下，直接在模块中使用Cesium对象即可
+
+![code01](assets/img/code01.png)
+
+查看示例组件，模块引入即可，如下
+
+![code02](assets/img/code02.png)
+
+
+
+### 结束
+
+安装完成后，就可以在vue项目中任意模块中使用Cesium了
+
+你可以在每个Vue模块中直接使用Cesium对象实例而无须import引入
+
+如果你想引入cesium包下的文件，我们为cesium包的目录设置了别名，就叫`cesium`
+
+所以在引入`Widgets.css`时引入路径为`cesium/Widgets/widgets.css`
 
 
 
