@@ -1,7 +1,13 @@
 # vue-cli-plugin-cesium
+
+
+<img src="./logo.png" style="zoom:30%;" />
+
+
+
+
+
 基于Vue-cli的cesium封装(Cesium encapsulation based on Vue cli)
-
-
 
 ### 前言
 
