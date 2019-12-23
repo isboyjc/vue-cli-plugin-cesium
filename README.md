@@ -1,9 +1,7 @@
 # vue-cli-plugin-cesium
 
 
-![logo](/logo.png)
-
-
+<img src="/logo.png" />
 
 
 
