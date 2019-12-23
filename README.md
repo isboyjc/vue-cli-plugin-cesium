@@ -1,7 +1,7 @@
 # vue-cli-plugin-cesium
 
 
-<img src="./logo.png" style="zoom:30%;" />
+<img src="./logo.png"/>
 
 
 
