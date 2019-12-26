@@ -1,7 +1,7 @@
 # vue-cli-plugin-cesium
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/isboyjc/PictureBed/master/other/plugin-cesium-logobig.png" width="200px">
+  <img src="https://raw.githubusercontent.com/isboyjc/PictureBed/master/vue-cli-plugin-cesium/logobig.png" width="200px">
 </p>
 <p align="left">基于Vue-cli的cesium封装(Cesium encapsulation based on Vue cli)</p>
 
@@ -127,11 +127,11 @@ Whether to add sample components to the project components directory?
 
 如下所示：
 
-![gui001](assets/img/gui001.png)
+![gui001](https://raw.githubusercontent.com/isboyjc/PictureBed/master/vue-cli-plugin-cesium/gui001.png)
 
 选中插件点击安装
 
-![gui002](assets/img/gui002.png)
+![gui002](https://raw.githubusercontent.com/isboyjc/PictureBed/master/vue-cli-plugin-cesium/gui002.png)
 
 
 
@@ -141,11 +141,11 @@ Whether to add sample components to the project components directory?
 
 开发时如下，直接在模块中使用Cesium对象即可
 
-![code01](assets/img/code01.png)
+![code01](https://raw.githubusercontent.com/isboyjc/PictureBed/master/vue-cli-plugin-cesium/code01.png)
 
 查看示例组件，模块引入即可，如下
 
-![code02](assets/img/code02.png)
+![code02](https://raw.githubusercontent.com/isboyjc/PictureBed/master/vue-cli-plugin-cesium/code02.png)
 
 
 
