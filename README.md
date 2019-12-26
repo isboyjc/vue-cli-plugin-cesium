@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://raw.githubusercontent.com/isboyjc/PictureBed/master/other/plugin-cesium-logobig.png" width="200px">
 </p>
-<p align="center">基于Vue-cli的cesium封装(Cesium encapsulation based on Vue cli)</p>
+<p align="left">基于Vue-cli的cesium封装(Cesium encapsulation based on Vue cli)</p>
 
 [![npm](https://img.shields.io/npm/v/vue-cli-plugin-cesium?style=plastic)](https://www.npmjs.com/package/vue-cli-plugin-cesium)
 [![npm](https://img.shields.io/npm/dm/vue-cli-plugin-cesium?style=plastic)](https://www.npmjs.com/package/vue-cli-plugin-cesium)
