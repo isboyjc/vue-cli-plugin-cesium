@@ -1,8 +1,8 @@
-# vue-cli-plugin-cesium
+---
+title: vue-cli-plugin-cesium
+date: 2019-12-28
+---
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/isboyjc/PictureBed/master/vue-cli-plugin-cesium/logobig.png" width="200px">
-</p>
 <p align="left">基于Vue-cli的cesium封装(Cesium encapsulation based on Vue cli)</p>
 
 [![npm](https://img.shields.io/npm/v/vue-cli-plugin-cesium?style=plastic)](https://www.npmjs.com/package/vue-cli-plugin-cesium)
@@ -12,7 +12,7 @@
 [![Github fork](https://img.shields.io/github/forks/isboyjc/vue-cli-plugin-cesium?style=social)](https://github.com/isboyjc/vue-cli-plugin-cesium)
 
 
-### 前言
+## 前言
 
 通常情况下，我们要在vue中使用Cesium，首先要安装Cesium，然后要在vue-cli的webpack配置很多东西，对一些有经验的人来说只不过麻烦些，但是对Cesium的初学者来说会很痛苦，因为没有使用过，也不知到要怎么配置，只能搜索网上的教程，一步一步踩坑
 
@@ -24,7 +24,7 @@ vue-cli-plugin-cesium就是为了解决这个问题
 
 
 
-### 介绍
+## 介绍
 
 vue-cli-plugin-cesium是一个针对Cesium的vue-cli扩展插件，使用它将会让我们在vue-cli中零配置使用Cesium
 
@@ -45,7 +45,7 @@ vue-cli-plugin-cesium是一个针对Cesium的vue-cli扩展插件，使用它将�
 
 
 
-### 安装
+## 安装
 
 vue-cli-plugin-cesium是基于vue-cli的扩展插件，所以在使用前要先安装vue-cli，并使用vue-cli创建一个vue项目
 
@@ -55,7 +55,7 @@ vue-cli-plugin-cesium是基于vue-cli的扩展插件，所以在使用前要先�
 
 创建好一个vue项目后就可以按照以下步骤使用该插件了
 
-#### 使用方式一
+### 使用方式一
 
 首先是安装vue-cli-plugin-cesium插件，推荐使用yarn安装，因为它更简洁
 
@@ -75,7 +75,7 @@ vue invoke vue-cli-plugin-cesium
 
 
 
-#### 使用方式二
+### 使用方式二
 
 如果您觉得使用方式一两步有些麻烦，您可以使用`vue add`的方式安装使用，即可一步到位
 
@@ -85,11 +85,11 @@ vue add vue-cli-plugin-cesium
 
 
 
-#### 安装过程
+### 安装过程
 
 在`vue invoke`或`vue add`的过程中会有两个询问
 
-##### 询问一
+#### 询问一
 
 ```js
 Whether to import styles globally. This operation will automatically import widgets.css in main.js?
@@ -104,7 +104,7 @@ Whether to import styles globally. This operation will automatically import widg
 import 'cesium/Widgets/widgets.css';
 ```
 
-##### 询问二
+#### 询问二
 
 ```js
 Whether to add sample components to the project components directory?
@@ -121,7 +121,7 @@ Whether to add sample components to the project components directory?
 
 
 
-### GUI中安装
+## GUI中安装
 
 如果我们使用`vue ui`创建项目，也可以直接在项目创建后的插件选项里搜索vue-cli-plugin-cesium并安装
 
@@ -137,7 +137,7 @@ Whether to add sample components to the project components directory?
 
 
 
-### 使用
+## 使用
 
 开发时如下，直接在模块中使用Cesium对象即可
 
@@ -149,7 +149,7 @@ Whether to add sample components to the project components directory?
 
 
 
-### 结束
+## 结束
 
 安装完成后，就可以在vue项目中任意模块中使用Cesium了
 
@@ -166,4 +166,7 @@ Whether to add sample components to the project components directory?
 后期我会慢慢的完善此插件，并不停迭代，也欢迎大家提出建议
 
 如果您觉得还行，点个star再走哟
+
+
+
 

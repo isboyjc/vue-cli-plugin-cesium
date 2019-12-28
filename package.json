@@ -1,10 +1,12 @@
 {
   "name": "vue-cli-plugin-cesium",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Cesium encapsulation based on Vue cli",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -20,5 +22,9 @@
   "bugs": {
     "url": "https://github.com/isboyjc/vue-cli-plugin-cesium/issues"
   },
-  "homepage": "https://github.com/isboyjc/vue-cli-plugin-cesium#readme"
+  "homepage": "https://github.com/isboyjc/vue-cli-plugin-cesium#readme",
+  "dependencies": {
+    "vuepress": "^1.2.0",
+    "vuepress-theme-reco": "^1.1.4"
+  }
 }
