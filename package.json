@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/isboyjc/vue-cli-plugin-cesium#readme",
   "dependencies": {
+    "moment": "^2.24.0",
     "vuepress": "^1.2.0",
     "vuepress-theme-reco": "^1.1.4"
   }

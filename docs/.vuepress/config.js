@@ -2,7 +2,7 @@
  * @Author: isboyjc
  * @Date: 2019-12-28 09:37:43
  * @LastEditors  : isboyjc
- * @LastEditTime : 2019-12-28 11:07:26
+ * @LastEditTime : 2019-12-28 12:24:45
  * @Description: 
  */
 module.exports = {
@@ -22,7 +22,7 @@ module.exports = {
   // 是否开启 PWA
   serviceWorker: true, 
   // 部署到github相关的配置
-  base: '/', 
+  base: '/vue-cli-plugin-cesium/', 
   markdown: {
     // 代码块是否显示行号
     lineNumbers: false 
