@@ -2,7 +2,7 @@
  * @Author: isboyjc
  * @Date: 2019-12-14 16:37:27
  * @LastEditors: isboyjc
- * @LastEditTime: 2020-03-26 18:31:36
+ * @LastEditTime: 2020-03-27 14:01:09
  * @Description: service plugin 修改webpack配置
  */
 const path = require("path")
@@ -51,6 +51,10 @@ module.exports = (api, opts) => {
           {
             from: path.join(cesiumSource, "Widgets"),
             to: "Widgets"
+          },
+          {
+            from: path.join(cesiumSource, "ThirdParty"),
+            to: "ThirdParty"
           }
         ]),
         // 使Cesium对象实例可在每个js中使用而无须import
