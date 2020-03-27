@@ -2,25 +2,25 @@
  * @Author: isboyjc
  * @Date: 2019-12-14 16:37:27
  * @LastEditors: isboyjc
- * @LastEditTime: 2019-12-14 19:44:49
+ * @LastEditTime: 2020-03-26 18:31:36
  * @Description: service plugin 修改webpack配置
  */
-const path = require("path");
-const webpack = require("webpack");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const cesiumSource = "node_modules/cesium/Source";
-const cesiumWorkers = "../Build/Cesium/Workers";
+const path = require("path")
+const webpack = require("webpack")
+const CopyWebpackPlugin = require("copy-webpack-plugin")
+const cesiumSource = "node_modules/cesium/Source"
+const cesiumWorkers = "../Build/Cesium/Workers"
 
 module.exports = (api, opts) => {
   // 详情请看 https://cli.vuejs.org/zh/dev-guide/plugin-dev.html#service-%E6%8F%92%E4%BB%B6
   api.configureWebpack(webpackConfig => {
     // 修改 webpack 配置
     // 或返回通过 webpack-merge 合并的配置对象
-    let configureWebpack =  {
+    let configureWebpack = {
       resolve: {
         alias: {
           // 添加一个cesium别名，以便我们在项目中轻松的引入它
-          cesium: api.resolve(cesiumSource) 
+          cesium: api.resolve(cesiumSource)
         }
       },
       amd: {
@@ -35,25 +35,27 @@ module.exports = (api, opts) => {
       },
       plugins: [
         new webpack.DefinePlugin({
-          // 在铯中定义用于加载资源的相对基路径
-          CESIUM_BASE_URL: JSON.stringify('')
+          // 在cesium中定义用于加载资源的相对基路径
+          CESIUM_BASE_URL: JSON.stringify("")
         }),
         // 对build生效，拷贝到dist目录下。如：dist/Assets
         new CopyWebpackPlugin([
           {
             from: path.join(cesiumSource, cesiumWorkers),
             to: "Workers"
-          },{
+          },
+          {
             from: path.join(cesiumSource, "Assets"),
             to: "Assets"
-          },{
+          },
+          {
             from: path.join(cesiumSource, "Widgets"),
             to: "Widgets"
           }
         ]),
         // 使Cesium对象实例可在每个js中使用而无须import
         new webpack.ProvidePlugin({
-          Cesium: ["cesium/Cesium"], 
+          Cesium: ["cesium/Cesium"]
         })
       ],
       optimization: {
@@ -75,7 +77,7 @@ module.exports = (api, opts) => {
           // loader 切换到优化模式
           minimize: true
         })
-      ]);
+      ])
     }
 
     // 返回配置对象，会通过webpack-merge合并到cli默认webpack配置
