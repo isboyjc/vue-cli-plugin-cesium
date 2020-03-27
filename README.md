@@ -157,3 +157,11 @@ Whether to add sample components to the project components directory(是否添�
 后期我会慢慢的完善此插件，并不停迭代，也欢迎大家提出建议，也欢迎 PR
 
 如果您觉得还行，点个 star 再走哟
+
+加下小助手【圈子】微信，验证消息写【github】|【cesium】都可以直接通过，和他聊聊天，或者加技术交流群我们一块玩耍都可以的
+
+![圈子](https://raw.githubusercontent.com/isboyjc/PictureBed/master/other/quanzi.jpeg)
+
+如果你加小助手微信遇到了问题，也可以通过以下方式联系我或加群
+
+![other](https://raw.githubusercontent.com/isboyjc/PictureBed/master/other/20200111-143924.png)
