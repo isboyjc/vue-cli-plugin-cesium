@@ -2,14 +2,12 @@
  * @Author: isboyjc
  * @Date: 2019-12-14 16:38:18
  * @LastEditors: isboyjc
- * @LastEditTime: 2020-03-26 16:58:57
+ * @LastEditTime: 2020-03-27 14:43:53
  * @Description: generator 允许一个 generator 向 package.json 注入额外的依赖或字段，并向项目中添加文件
  */
 module.exports = (api, options, rootOptions) => {
-  let version = null
-  options.addVersion.startsWith("*")
-    ? (version = "*")
-    : (version = options.addVersion)
+  let version = options.addVersion
+  version.startsWith("*") ? (version = "*") : null
   // 拓展 package.json，默认merge已有依赖项，可以设置参数 merge: false
   api.extendPackage({
     dependencies: {
