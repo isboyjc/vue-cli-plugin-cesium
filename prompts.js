@@ -2,7 +2,7 @@
  * @Author: isboyjc
  * @Date: 2019-12-14 19:39:35
  * @LastEditors: isboyjc
- * @LastEditTime: 2020-03-26 17:00:04
+ * @LastEditTime: 2020-04-08 09:48:39
  * @Description: 提示代码，以供用户在命令行选择
  */
 module.exports = [
@@ -11,6 +11,7 @@ module.exports = [
     type: "list",
     choices: [
       "*(Newest)",
+      "1.68.0",
       "1.67.0",
       "1.66.0",
       "1.65.0",
@@ -69,23 +70,23 @@ module.exports = [
       "1.19.0",
       "1.18.0",
       "1.17.0",
-      "1.16.0"
+      "1.16.0",
     ],
     message:
-      "Please choose a version of 'cesium' from this list(请在列表中选择 cesium 的版本)"
+      "Please choose a version of 'cesium' from this list(请在列表中选择 cesium 的版本)",
   },
   {
     name: `addWidgetsToMain`,
     type: "confirm",
     message:
       "Whether to import styles globally. This operation will automatically import widgets.css in main.js(是否全局引入样式,该操作将自动在main.js引入widgets.css)？",
-    default: true
+    default: true,
   },
   {
     name: `addExample`,
     type: "confirm",
     message:
       "Whether to add sample components to the project components directory(是否添加示例组件到项目components目录)？",
-    default: true
-  }
+    default: true,
+  },
 ]
