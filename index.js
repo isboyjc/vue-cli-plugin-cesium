@@ -2,7 +2,7 @@
  * @Author: isboyjc
  * @Date: 2019-12-14 16:37:27
  * @LastEditors: isboyjc
- * @LastEditTime: 2020-03-27 14:01:09
+ * @LastEditTime: 2020-04-13 13:44:23
  * @Description: service plugin 修改webpack配置
  */
 const path = require("path")
@@ -36,7 +36,7 @@ module.exports = (api, opts) => {
       plugins: [
         new webpack.DefinePlugin({
           // 在cesium中定义用于加载资源的相对基路径
-          CESIUM_BASE_URL: JSON.stringify("")
+          CESIUM_BASE_URL: JSON.stringify(opts.publicPath || "")
         }),
         // 对build生效，拷贝到dist目录下。如：dist/Assets
         new CopyWebpackPlugin([
