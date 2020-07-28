@@ -50,9 +50,22 @@ vue-cli-plugin-cesium 是基于 vue-cli 的扩展插件，所以在使用前要�
 
 创建好一个 vue 项目后就可以按照以下步骤使用该插件了
 
+
+
 #### 使用方式一
 
-首先是安装 vue-cli-plugin-cesium 插件，推荐使用 yarn 安装，因为它更简洁
+推荐使用 `vue add` 的方式安装，一步到位
+
+```js
+vue add vue-cli-plugin-cesium
+
+// 非全局安装的vue-cli可以
+npx vue add vue-cli-plugin-cesium
+```
+
+#### 使用方式二
+
+首先安装 vue-cli-plugin-cesium 插件，推荐使用 yarn 安装，因为它更简洁
 
 ```js
 // npm
@@ -69,17 +82,6 @@ vue invoke vue-cli-plugin-cesium
 
 // 非全局安装的vue-cli可以
 npx vue invoke vue-cli-plugin-cesium
-```
-
-#### 使用方式二
-
-如果您觉得使用方式一两步有些麻烦，您可以使用`vue add`的方式安装使用，即可一步到位
-
-```js
-vue add vue-cli-plugin-cesium
-
-// 非全局安装的vue-cli可以
-npx vue add vue-cli-plugin-cesium
 ```
 
 #### 安装过程
