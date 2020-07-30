@@ -3,3 +3,5 @@ dist
 docs
 .babelrc
 .travis.yml
+/package-lock.json
+/yarn.lock
