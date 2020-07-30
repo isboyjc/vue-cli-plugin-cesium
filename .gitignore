@@ -44,5 +44,6 @@ coverage
 
 /index.js
 /package-lock.json
+/yarn.lock
 /lib
 .vscode
